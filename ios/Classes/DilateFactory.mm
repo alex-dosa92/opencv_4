@@ -238,7 +238,7 @@ FlutterStandardTypedData * dilateB(FlutterStandardTypedData * data, double kerne
                                              8 * dst.elemSize(),                       //bits per pixel
                                              dst.step[0],                            //bytesPerRow
                                              colorSpace,                                 //colorspace
-                                             kCGImageAlphaNone|kCGBitmapByteOrderDefault,// bitmap info
+                                             kCGImageAlphaPremultipliedLast|kCGBitmapByteOrderDefault,// bitmap info
                                              provider,                                   //CGDataProviderRef
                                              NULL,                                       //decode
                                              false,                                      //should interpolate
